@@ -1,9 +1,9 @@
 hyperparameters:
-  epochs: 20
-  batch_size: 64
-  lr: 0.001
-  num_workers: 4
-  val_split: 0.1
+  epochs: 20            # Fixed training duration (avoid overfitting)
+  batch_size: 64        # Stable gradient estimation
+  lr: 0.001             # Good starting learning rate for Adam
+  num_workers: 4        # Prevents CPU overload in Windows/WSL systems
+  val_split: 0.1        # 10% validation data
 
 paths:
   train_dir: 'data/cifar10/train'
